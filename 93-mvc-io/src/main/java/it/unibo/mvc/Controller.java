@@ -9,30 +9,30 @@ public interface Controller {
     /**
      * Set the next string to print.
      * 
-     * @param next
+     * @param next next string
      * 
      * @throws NullPointerException Passing a null value is not accepted
      */
-    public void setNext(final String next);
+    void setNext(String next);
 
     /**
      * 
      * @return next string to print
      */
-    public String getNext();
+    String getNext();
 
     /**
      * 
      * @return history of printed strings
      * 
      */
-    public List<String> getHistory();
+    List<String> getHistory();
 
     /**
      * Prints the current string.
      * 
      * @throws IllegalStateException
      */
-    public void printCurrent();
+    void printCurrent();
 
 }
